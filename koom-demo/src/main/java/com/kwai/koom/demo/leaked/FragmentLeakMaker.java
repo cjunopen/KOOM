@@ -1,7 +1,7 @@
 package com.kwai.koom.demo.leaked;
 
 import android.content.Context;
-import androidx.fragment.app.Fragment;
+import android.support.v4.app.Fragment;
 
 /**
  * Copyright 2020 Kwai, Inc. All rights reserved.

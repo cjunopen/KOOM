@@ -2,10 +2,10 @@ package com.kwai.koom.demo;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.kwai.koom.demo.leaked.LeakMaker;
 import com.kwai.koom.javaoom.KOOM;
@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    reportButton = findViewById(R.id.btn_report_leak);
-    reportText = findViewById(R.id.tv_report_status);
+    reportButton = (Button) findViewById(R.id.btn_report_leak);
+    reportText = (TextView) findViewById(R.id.tv_report_status);
 
     findViewById(R.id.btn_report_leak).setOnClickListener(v -> {
       reportButton.setVisibility(View.GONE);
